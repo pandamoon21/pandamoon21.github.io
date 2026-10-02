@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EnigamiBot rclone</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 5rem;
+    color: #1a1a1a; background: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e8e8e8; background: #141414; }
+    a { color: #8ab4f8; }
+    footer { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  .sub { color: #666; margin: 0 0 2.25rem; }
+  @media (prefers-color-scheme: dark) { .sub { color: #999; } }
+  h2 { font-size: 1.1rem; margin: 2rem 0 .6rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: .3rem 0; }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.25rem;
+    border-top: 1px solid #e2e2e2; font-size: .9rem; color: #666;
+  }
+  @media (prefers-color-scheme: dark) { footer { color: #999; } }
+  code { font-size: .9em; background: rgba(128,128,128,.15); padding: .1em .35em; border-radius: 4px; }
+</style>
+</head>
+<body>
+
+<h1>EnigamiBot rclone</h1>
+<p class="sub">Personal Google Drive Uploader</p>
+
+<p>
+  <strong>EnigamiBot rclone</strong> is a private, self-hosted Telegram bot that
+  uploads files to its owner's own Google Drive account using
+  <a href="https://rclone.org" rel="noopener">rclone</a>. An OAuth client is
+  registered under this name so the bot can authenticate to the Google Drive API
+  with its own API quota rather than a shared one.
+</p>
+
+<h2>What it does</h2>
+<ul>
+  <li>Receives a download request through Telegram from its single owner.</li>
+  <li>Fetches the file and uploads it to the owner's personal Google Drive.</li>
+  <li>Stores the resulting file in a folder the owner controls.</li>
+</ul>
+
+<h2>Who uses it</h2>
+<p>
+  One person — the owner. The application is not distributed, not published to
+  any app store, and has no other users.
+</p>
+
+<h2>Data</h2>
+<p>
+  The bot accesses only the owner's own Google Drive. It does not read, collect,
+  or transmit Drive contents anywhere else. See the
+  <a href="privacy.html">Privacy Policy</a> for details.
+</p>
+
+<footer>
+  <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+  <a href="https://rclone.org" rel="noopener">rclone.org</a>
+</footer>
+
+</body>
+</html>
